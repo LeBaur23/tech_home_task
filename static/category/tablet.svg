@@ -1,0 +1,27 @@
+<svg width="36px" height="52px" xmlns="http://www.w3.org/2000/svg" id="tablet" viewBox="0 0 36 52">
+    <defs>
+        <style>
+            .cls-1{fill:#717171}.cls-2{fill:#fb443f}
+        </style>
+    </defs>
+    <g id="Group_162" data-name="Group 162">
+        <g id="Group_161" data-name="Group 161">
+            <path id="Path_203" d="M105.8 0H77.2a3.759 3.759 0 0 0-3.7 3.809v44.382A3.759 3.759 0 0 0 77.2 52h28.6a3.759 3.759 0 0 0 3.7-3.809V3.809A3.759 3.759 0 0 0 105.8 0zm2.219 48.191a2.255 2.255 0 0 1-2.219 2.285H77.2a2.255 2.255 0 0 1-2.219-2.285V3.809A2.255 2.255 0 0 1 77.2 1.523h28.6a2.255 2.255 0 0 1 2.219 2.285z" style="fill:#707070" data-name="Path 203" transform="translate(-73.5)"/>
+        </g>
+    </g>
+    <g id="Group_164" data-name="Group 164" transform="translate(3.066 6.131)">
+        <g id="Group_163" data-name="Group 163">
+            <path id="Path_204" d="M132.634 60h-28.4a.751.751 0 0 0-.734.766v35.458a.751.751 0 0 0 .734.766h2.938a.767.767 0 0 0 0-1.533h-2.2V61.533H131.9v33.925h-21.79a.767.767 0 0 0 0 1.533h22.524a.751.751 0 0 0 .734-.766V60.766a.751.751 0 0 0-.734-.766z" style="fill:#fb443f" data-name="Path 204" transform="translate(-103.5 -60)"/>
+        </g>
+    </g>
+    <g id="Group_166" data-name="Group 166" transform="translate(14.168 3.066)">
+        <g id="Group_165" data-name="Group 165">
+            <path id="Path_205" d="M225.4 30h-6.131a.766.766 0 1 0 0 1.533h6.131a.766.766 0 1 0 0-1.533z" style="fill:#fb443f" data-name="Path 205" transform="translate(-218.5 -30)"/>
+        </g>
+    </g>
+    <g id="Group_168" data-name="Group 168" transform="translate(13.657 44.336)">
+        <g id="Group_167" data-name="Group 167">
+            <path id="Path_206" d="M219.886 437H215.8a2.3 2.3 0 0 0 0 4.6h4.087a2.3 2.3 0 0 0 0-4.6zm0 3.066H215.8a.766.766 0 0 1 0-1.533h4.087a.766.766 0 0 1 0 1.533z" style="fill:#fb443f" data-name="Path 206" transform="translate(-213.5 -437)"/>
+        </g>
+    </g>
+</svg>
