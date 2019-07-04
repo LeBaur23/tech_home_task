@@ -1,12 +1,15 @@
 // components
 @import "variables";
 @import "components/choco-icons";
+@import "components/back_button";
 
 // pages
 @import "./pages/main_page";
 @import "./pages/product_page";
 @import "./pages/basket_page";
 @import "./pages/category_page";
+@import "./pages/home_page";
+@import "./pages/statistic_page";
 
 
 // TYPOGRAPHY
@@ -25,12 +28,15 @@
 
 .slide-leave-active,
 .slide-enter-active {
-  transition: 0.1s;
+  transition: 0.2s;
+  position: fixed;
 }
 .slide-enter {
+  position: fixed;
   transform: translate(100%, 0);
 }
 .slide-leave-to {
+  position: fixed;
   transform: translate(-100%, 0);
 }
 
@@ -60,6 +66,14 @@
 }
 .text-throughline {
   text-decoration: line-through;
+}
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/lato.ttf');
+}
+@font-face {
+  font-family: LatoLight;
+  src: url('./fonts/Lato-Light.ttf');
 }
 
 // GLOBAL STYLES
@@ -118,13 +132,12 @@
 
 // default
 html, body, #app {
-  background-color: #10162c;
+  background-color: $main_dark;
   margin: 0;
   padding: 0;
-  height: 100%;
   width: 100%;
-  font-family: Ubuntu, 'sans-serif', Verdana;
   font-weight: 100;
+  font-family: LatoLight;
   color: $default_color;
 }
 ul {

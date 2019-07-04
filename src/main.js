@@ -11,7 +11,9 @@ import 'styles/variables.scss'
 
 // components
 import CHOCO_ICONS from './components/choco-icons.vue'
+import BACK_BUTTON from './components/back_button.vue'
 Vue.component('chocomart-icon', CHOCO_ICONS)
+Vue.component('back_button', BACK_BUTTON)
 
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'

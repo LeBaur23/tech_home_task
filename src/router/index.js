@@ -3,6 +3,7 @@ import Router from 'vue-router'
 // Pages
 import MainPage from '../pages/main_page'
 import HomePage from '../pages/home_page'
+import StatisticPage from '../pages/statistic_page'
 
 Vue.use(Router)
 
@@ -21,7 +22,12 @@ export default new Router({
           path: '',
           name: 'home_page',
           component: HomePage
-        }
+        },
+        {
+          path: '/statistic',
+          name: 'statistic_page',
+          component: StatisticPage
+        },
       ]
     }
   ]

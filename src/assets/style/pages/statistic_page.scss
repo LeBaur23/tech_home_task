@@ -1,0 +1,34 @@
+.statistic {
+  &-page {
+    width: 100%;
+    &-header {
+      height: 40px;
+      margin-top: 30px;
+      color: white;
+    }
+    &-month {
+      padding: 20px;
+      position: relative;
+      background-color: $brand_color;
+      &s {
+        margin-top: 20px;
+        overflow-y: hidden;
+        padding-bottom: 3px;
+      }
+      &__active {
+        &:after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 3px;
+          border-radius: 3px;
+          background-color: #0B78E3;
+          bottom: 0;
+          left: 0;
+          transform: translateY(50%);
+          //border-bottom: 1px solid #0B78E3;
+        }
+      }
+    }
+  }
+}

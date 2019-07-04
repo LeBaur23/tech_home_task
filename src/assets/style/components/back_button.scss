@@ -1,0 +1,19 @@
+.back-button {
+  position: absolute;
+  z-index: 2;
+  top: 30px;
+  left: 20px;
+  border: 1px solid #ebebeb;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .choco-icon {
+    margin-left: -2px;
+    &__svg {
+      display: flex;
+    }
+  }
+}

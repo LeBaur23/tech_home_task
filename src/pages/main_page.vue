@@ -1,14 +1,29 @@
 <template>
   <div class="main-page">
-    Main Page
-    <router-view/>
+    <transition
+    name="slide"
+    mode="out-in"
+    >
+      <router-view/>
+    </transition>
     <div class="main-page-footer">
-      <chocomart-icon :icon="'avatar'" :color="'white'" :font_size="'25px'"></chocomart-icon>
-      <chocomart-icon :icon="'gallery'" :color="'white'" :font_size="'25px'"></chocomart-icon>
-      <chocomart-icon :icon="'bell'" :color="'white'" :font_size="'25px'"></chocomart-icon>
-      <chocomart-icon :icon="'mark'" :color="'white'" :font_size="'25px'"></chocomart-icon>
-      <chocomart-icon :icon="'home'" :color="'white'" :font_size="'25px'"></chocomart-icon>
-      <!--test-->
+      <router-link :to="{path: '/'}">
+        <chocomart-icon :icon="'home'" :color="this.$route.path === '/' ? 'white' : ''" :font_size="'25px'" ></chocomart-icon>
+      </router-link>
+      <router-link :to="{name: 'statistic_page'}">
+        <chocomart-icon :icon="'gallery'" :color="this.$route.path === '/statistic' ? 'white' : ''" :font_size="'25px'"></chocomart-icon>
+      </router-link>
+      <chocomart-icon :icon="'bell'"  :font_size="'25px'"></chocomart-icon>
+      <chocomart-icon :icon="'mark'"  :font_size="'25px'"></chocomart-icon>
+      <chocomart-icon :icon="'avatar'" :font_size="'25px'"></chocomart-icon>
+
     </div>
   </div>
 </template>
+<script>
+  export default {
+    mounted () {
+      console.log(this.$route);
+    }
+  }
+</script>

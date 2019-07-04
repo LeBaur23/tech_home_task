@@ -2,6 +2,7 @@ var icons = {
   'avatar': '/static/icons/avatar.svg',
   'gallery': '/static/icons/gallery.svg',
   'home': '/static/icons/home.svg',
+  'back_arrow': '/static/icons/back_arrow.svg',
   'bell': '/static/icons/bell.svg',
   'mark': '/static/icons/mark.svg',
   'bonus': '../static/icons/coins.svg',
