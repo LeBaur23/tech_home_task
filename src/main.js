@@ -9,6 +9,12 @@ import 'bootstrap-4-grid/css/grid.css'
 import './assets/style/style.scss'
 import 'styles/variables.scss'
 
+//libraries
+import Donut from 'vue-css-donut-chart';
+import 'vue-css-donut-chart/dist/vcdonut.css';
+
+Vue.use(Donut);
+
 // components
 import CHOCO_ICONS from './components/choco-icons.vue'
 import BACK_BUTTON from './components/back_button.vue'
