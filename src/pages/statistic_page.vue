@@ -51,7 +51,7 @@
       };
     },
     methods: {
-      handleSectionClick(section) {
+      handleSectionClick: function (section) {
         this.clicked_info = `$${section.price}`;
         this.changed_statistic = false;
         setTimeout(() => {
