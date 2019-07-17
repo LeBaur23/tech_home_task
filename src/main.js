@@ -12,8 +12,11 @@ import 'styles/variables.scss'
 //libraries
 import Donut from 'vue-css-donut-chart';
 import 'vue-css-donut-chart/dist/vcdonut.css';
+import moment from 'moment';
+Vue.prototype.$moment = moment
 
-Vue.use(Donut);
+// plugins
+import Global from './global/globals'
 
 // components
 import CHOCO_ICONS from './components/choco-icons.vue'
@@ -23,7 +26,13 @@ Vue.component('back_button', BACK_BUTTON)
 
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
-Vue.use(VueAwesomeSwiper)
+
+
+Vue.use(VueAwesomeSwiper);
+Vue.use(Donut);
+Vue.use(Global);
+// Vue.use(moment);
+
 
 Vue.config.productionTip = false
 

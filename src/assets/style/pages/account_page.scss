@@ -1,0 +1,36 @@
+.account {
+  &_page {
+    padding: 20px;
+    color: white;
+    width: 100%;
+    input {
+      height: 40px;
+      width: max-content;
+      border-radius: 3px;
+      border: none;
+      //outline: none;
+      text-align: center;
+    }
+    button {
+      width: 200px;
+      height: 40px;
+      display: block;
+      background: rebeccapurple;
+      border: none;
+      border-radius: 3px;
+      color: white;
+      margin: 0 auto;
+      margin-top: 20px;
+      outline: none;
+    }
+  }
+  &_img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    img {
+      border-radius: 50%;
+    }
+  }
+}

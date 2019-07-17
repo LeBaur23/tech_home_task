@@ -15,7 +15,10 @@
       </router-link>
       <chocomart-icon :icon="'bell'"  :font_size="'25px'"></chocomart-icon>
       <chocomart-icon :icon="'mark'"  :font_size="'25px'"></chocomart-icon>
-      <chocomart-icon :icon="'avatar'" :font_size="'25px'"></chocomart-icon>
+      <router-link :to="{name: 'account_page'}">
+        <chocomart-icon :icon="'avatar'" :color="this.$route.path === '/account' ? 'white' : ''" :font_size="'25px'"></chocomart-icon>
+      </router-link>
+
 
     </div>
   </div>
@@ -23,7 +26,7 @@
 <script>
   export default {
     mounted () {
-      console.log(this.$route);
+//      console.log(this.$route);
     }
   }
 </script>

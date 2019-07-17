@@ -7,8 +7,7 @@
       <chocomart-icon :icon="'gallery'" :color="this.$route.path === '/statistic' ? 'white' : ''" :font_size="'25px'"></chocomart-icon>
     </div>
     <div class="statistic-page-months d-flex">
-      <div class="statistic-page-month statistic-page-month__active">June</div>
-      <div class="statistic-page-month" v-for="i in 11">June</div>
+      <div class="statistic-page-month" v-for="i,y in months" @click="clicked_month = i" :class="{'statistic-page-month__active': i === clicked_month}">{{ i }}</div>
     </div>
     <div class="statistic-page-diagram">
       <vc-donut class="mt-5"
@@ -46,6 +45,8 @@
           { label: 'Green section', value: 20, price: '150',color: '#FACE15' },
           { label: 'Blue section', value: 55, price: '200' , color: '#56B2BA' }
         ],
+        months: [],
+        clicked_month: 'January',
         clicked_info: '',
         changed_statistic: true,
       };
@@ -60,6 +61,7 @@
       }
     },
     mounted () {
+      this.months = this.$moment.months();
     }
   }
 </script>

@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import MainPage from '../pages/main_page'
 import HomePage from '../pages/home_page'
 import StatisticPage from '../pages/statistic_page'
+import AccountPage from '../pages/account_page.vue'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
           name: 'statistic_page',
           component: StatisticPage
         },
+        {
+          path: '/account',
+          name: 'account_page',
+          component: AccountPage
+        }
       ]
     }
   ]
